@@ -3,7 +3,7 @@
 // @description    Adds a dark mode to giffgaff's community forum.
 // @author         David Wheatley <davidwheatley03@gmail.com> (https://github.com/davwheat/giffgaff-flarum-dark-mode)
 // @namespace      https://github.com/davwheat/giffgaff-flarum-dark-mode
-// @version        1.0
+// @version        1.1
 // @icon           https://github.com/davwheat/giffgaff-flarum-better-post-dates/blob/master/icon.png?raw=true
 // @match          *://community.giffgaff.com/*
 // @grant          none
@@ -11,9 +11,11 @@
 // ==/UserScript==
 
 $(() => {
-  $("head").append(
-    "<link rel='stylesheet' type='text/css' href='https://raw.githubusercontent.com/davwheat/giffgaff-flarum-dark-mode/master/dark.min.css'>"
-  );
+  $.get(
+    "https://raw.githubusercontent.com/davwheat/giffgaff-flarum-dark-mode/master/dark.min.css"
+  ).done(data => {
+    $("head").append("<style>" + data + "</style>");
 
-  console.log("Applied dark theme!");
+    console.log("Applied dark theme!");
+  });
 });
