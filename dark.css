@@ -39,11 +39,11 @@ div.TagsPage-content .TagTiles > li.TagTile {
   background-color: #212121 !important;
 }
 
-.TagsPage-content .TagTiles>li.TagTile a {
+.TagsPage-content .TagTiles > li.TagTile a {
   color: #eee !important;
 }
 
-.TagsPage-content .TagTiles>li.TagTile .TagTile-info .TagTile-description {
+.TagsPage-content .TagTiles > li.TagTile .TagTile-info .TagTile-description {
   color: #bbb !important;
 }
 
@@ -526,6 +526,8 @@ img.emoji {
 
 .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li * {
   color: #aaa !important;
+  padding-left: 6px;
+  padding-right: 4px;
 }
 
 .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li.active * {
@@ -534,11 +536,11 @@ img.emoji {
 
 .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li:hover *,
 .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li:focus * {
-  background: #444444;
+  background: #444444 !important;
 }
 
 .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li:focus * {
-  background: #444444;
+  background: #444444 !important;
 }
 
 /* #endregion */
