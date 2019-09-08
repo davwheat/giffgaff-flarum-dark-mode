@@ -237,27 +237,41 @@ div.TagsPage-content .TagTiles > li.TagTile {
   background: #212121 !important;
 }
 
-.Post .Post-body a {
+.Post-body p,
+.Post-body ul,
+.Post-body ol,
+.Post-body blockquote {
+  color: #fff;
+}
+
+.Post-body a {
   color: #bbb !important;
   border-color: #bbb;
 }
 
+.Post-body a:hover,
+.Post-body a:focus,
+.Post-body a:active {
+  color: #eee !important;
+  border-color: #fff;
+}
+
 /* Quotes */
-.Post .Post-body blockquote {
+.Post-body blockquote {
   color: #bbb !important;
   background-color: #313131 !important;
   border-color: #3a3a3a !important;
 }
 
 /* Inline monospace */
-.Post .Post-body code {
+.Post-body code {
   font-family: "Fira Code", Consolas, monospace;
   background-color: #313131;
   color: #eee !important;
 }
 
 /* Code blocks */
-.Post .Post-body pre {
+.Post-body pre {
   background-color: #313131;
 }
 
@@ -288,12 +302,12 @@ div.TagsPage-content .TagTiles > li.TagTile {
 /* #region Post Header */
 
 /* Overrides default no-group avatar border to dark instead of light */
-.Post header.Post-header .Avatar.PostUser-avatar {
+.Post-header .Avatar.PostUser-avatar {
   border-color: #555 !important;
 }
 
 /* Darkens letter-based avatars */
-.Post header.Post-header span.Avatar.PostUser-avatar:after {
+.Post-header span.Avatar.PostUser-avatar:after {
   content: "";
   display: block;
   position: absolute;
@@ -305,11 +319,11 @@ div.TagsPage-content .TagTiles > li.TagTile {
   border-radius: 50%;
 }
 
-.Post .Post-header .UserCard .username {
+.Post-header .UserCard .username {
   color: #eee !important;
 }
 
-.Post header.Post-header .username {
+.Post-header .username {
   color: #bbb;
 }
 
@@ -317,10 +331,47 @@ div.TagsPage-content .TagTiles > li.TagTile {
 
 /* #region Post Footer */
 
+/* #region Best Answers */
+
+.DiscussionPage .PostStream .PostStream-item .Post .item-bestAnswerPost {
+  background-color: #313131;
+  color: #eee;
+}
+
+.Post--BestAnswer a .username {
+  color: #000;
+}
+
+.DiscussionPage
+  .PostStream
+  .PostStream-item
+  .Post
+  .item-bestAnswerPost
+  .Post-body
+  a:hover,
+.DiscussionPage
+  .PostStream
+  .PostStream-item
+  .Post
+  .item-bestAnswerPost
+  .Post-body
+  a:focus,
+.DiscussionPage
+  .PostStream
+  .PostStream-item
+  .Post
+  .item-bestAnswerPost
+  .Post-body
+  a:active {
+  border-color: #06ce85;
+}
+
+/* #endregion */
+
 /* #region Post Actions */
 
 .PostStream-item .Post aside.Post-actions,
-.Post aside.Post-actions button {
+aside.Post-actions button {
   color: #bbb;
 }
 
