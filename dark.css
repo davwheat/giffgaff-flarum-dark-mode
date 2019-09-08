@@ -256,6 +256,11 @@ div.TagsPage-content .TagTiles > li.TagTile {
   color: #eee !important;
 }
 
+/* Code blocks */
+.Post .Post-body pre {
+  background-color: #313131;
+}
+
 /* #region Tables */
 
 .PostStream-item .Post-body table {
