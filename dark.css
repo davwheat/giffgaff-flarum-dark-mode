@@ -16,6 +16,14 @@ hr {
   border-color: #444444;
 }
 
+/* #region Spoilers */
+
+.Spoiler--toggle, .Spoiler--content {
+  background-color: #313131;
+}
+
+/* #endregion */
+
 /* #region Nav Pane */
 
 .App.hasPane .DiscussionListItem .DiscussionListItem-content.unread {
