@@ -526,6 +526,10 @@ img.emoji {
 
 .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li * {
   color: #aaa !important;
+}
+
+.TagsPage .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li * {
+  color: #aaa !important;
   padding-left: 6px;
   padding-right: 4px;
 }
