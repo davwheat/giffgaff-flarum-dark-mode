@@ -12,6 +12,10 @@ a {
   color: #eee;
 }
 
+hr {
+  border-color: #444444;
+}
+
 /* #region Nav Pane */
 
 .App.hasPane .DiscussionListItem .DiscussionListItem-content.unread {
@@ -195,7 +199,8 @@ a {
 
 /* #region Posts */
 
-.PostStream-item, .Post {
+.PostStream-item,
+.Post {
   background: #212121 !important;
 }
 
@@ -217,6 +222,20 @@ a {
   background-color: #313131;
   color: #eee !important;
 }
+
+/* #region Tables */
+
+.PostStream-item .Post-body table {
+  background-color: #262626;
+  background-clip: content-box;
+}
+
+.PostStream-item .Post-body table td,
+.PostStream-item .Post-body table th {
+  border-color: #444444;
+}
+
+/* #endregion */
 
 .MentionsDropdown .PostPreview,
 .PostMention-preview .PostPreview,
