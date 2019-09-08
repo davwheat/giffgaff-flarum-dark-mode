@@ -16,10 +16,35 @@ hr {
   border-color: #444444;
 }
 
+/* #region Placeholders */
+
+.Placeholder p {
+  color: #eee;
+}
+
+/* #endregion */
+
 /* #region Spoilers */
 
-.Spoiler--toggle, .Spoiler--content {
+.Spoiler--toggle,
+.Spoiler--content {
   background-color: #313131;
+}
+
+/* #endregion */
+
+/* #region Tags Page */
+
+div.TagsPage-content .TagTiles > li.TagTile {
+  background-color: #212121 !important;
+}
+
+.TagsPage-content .TagTiles>li.TagTile a {
+  color: #eee !important;
+}
+
+.TagsPage-content .TagTiles>li.TagTile .TagTile-info .TagTile-description {
+  color: #bbb !important;
 }
 
 /* #endregion */
