@@ -280,6 +280,7 @@ div.TagsPage-content .TagTiles > li.TagTile {
 .PostStream-item .Post-body table {
   background-color: #262626;
   background-clip: content-box;
+  max-width: max-content;
 }
 
 .PostStream-item .Post-body table td,
