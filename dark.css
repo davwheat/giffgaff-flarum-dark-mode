@@ -407,15 +407,15 @@ aside.Post-actions button {
 /* #region Buttons */
 
 .Button {
-  background: #313131;
-  color: #eee;
+  background: #313131 !important;
+  color: #eee !important;
 }
 
 /* #region Follow Button */
 
 .Dropdown.SubscriptionMenu .Button.SubscriptionMenu-button--follow,
 .Dropdown.SubscriptionMenu-button.SubscriptionMenu-button--follow {
-  background: #00538a60;
+  background: #00538a60 !important;
 }
 
 /* #endregion */
@@ -424,7 +424,7 @@ aside.Post-actions button {
 
 button.Button--primary .Button-label:before,
 button.Button--primary .Button-label:after {
-  filter: brightness(2.25);
+  filter: brightness(2.25) !important;
 }
 
 .DiscussionPage
@@ -441,8 +441,8 @@ button.Button--primary .Button-label:after {
   .itemCount1
   button.Button--primary
   .Button-label {
-  border-color: #212121;
-  color: #000;
+  border-color: #212121 !important;
+  color: #000 !important;
 }
 
 /* #endregion */
@@ -620,6 +620,34 @@ img.emoji {
 .sideNav .Dropdown--select .Dropdown-menu > li:hover > a,
 .sideNav .Dropdown--select .Dropdown-menu > li:focus > a {
   color: #fff;
+}
+
+/* #endregion */
+
+/* #region Mobile-specific CSS */
+
+@media (max-width: 767px) {
+  .App-content {
+    background: #151515;
+  }
+
+  .DiscussionListItem .DiscussionListItem-content.unread {
+    background-color: #313131 !important;
+  }
+
+  .DiscussionListItem .DiscussionListItem-content.read {
+    background-color: #212121 !important;
+  }
+
+  .Dropdown .Dropdown-menu > li > a,
+  .Dropdown .Dropdown-menu > li > button {
+    background: #313131 !important;
+    color: #eee !important;
+  }
+
+  .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li * {
+    color: #eee !important;
+  }
 }
 
 /* #endregion */
