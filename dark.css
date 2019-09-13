@@ -648,6 +648,13 @@ img.emoji {
   .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li * {
     color: #eee !important;
   }
+
+  .Post-header span.Avatar.PostUser-avatar:after {
+    top: -6px;
+    left: 3px;
+    width: 32px;
+    height: 32px;
+  }
 }
 
 /* #endregion */
