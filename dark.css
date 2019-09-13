@@ -407,15 +407,15 @@ aside.Post-actions button {
 /* #region Buttons */
 
 .Button {
-  background: #313131 !important;
-  color: #eee !important;
+  background: #313131;
+  color: #eee;
 }
 
 /* #region Follow Button */
 
 .Dropdown.SubscriptionMenu .Button.SubscriptionMenu-button--follow,
 .Dropdown.SubscriptionMenu-button.SubscriptionMenu-button--follow {
-  background: #00538a60 !important;
+  background: #00538a60;
 }
 
 /* #endregion */
@@ -424,7 +424,7 @@ aside.Post-actions button {
 
 button.Button--primary .Button-label:before,
 button.Button--primary .Button-label:after {
-  filter: brightness(2.25) !important;
+  filter: brightness(2.25);
 }
 
 .DiscussionPage
@@ -432,7 +432,7 @@ button.Button--primary .Button-label:after {
   .item-controls
   .itemCount1
   button.Button--primary {
-  background-color: #212121 !important;
+  background-color: #212121;
 }
 
 .DiscussionPage
@@ -441,8 +441,8 @@ button.Button--primary .Button-label:after {
   .itemCount1
   button.Button--primary
   .Button-label {
-  border-color: #212121 !important;
-  color: #000 !important;
+  border-color: #212121;
+  color: #000;
 }
 
 /* #endregion */
