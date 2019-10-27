@@ -1,660 +1,824 @@
-body {
+/* General Colors */
+/* sorted dark -> light */
+/* used for table color only */
+/* Special Colors */
+/* Text Colors */
+body.dark {
   background: #151515;
-  color: #fff;
-}
-
-a {
-  color: #ddd;
-}
-
-.FormControl:focus,
-.FormControl.focus {
-  color: #eee;
-}
-
-hr {
-  border-color: #444444;
-}
-
-/* #region Placeholders */
-
-.Placeholder p {
-  color: #eee;
-}
-
-/* #endregion */
-
-/* #region Spoilers */
-
-.Spoiler--toggle,
-.Spoiler--content {
-  background-color: #313131;
-}
-
-/* #endregion */
-
-/* #region Tags Page */
-
-div.TagsPage-content .TagTiles > li.TagTile {
-  background-color: #212121 !important;
-}
-
-.TagsPage-content .TagTiles > li.TagTile a {
-  color: #eee !important;
-}
-
-.TagsPage-content .TagTiles > li.TagTile .TagTile-info .TagTile-description {
-  color: #bbb !important;
-}
-
-/* #endregion */
-
-/* #region Nav Pane */
-
-.App.hasPane .DiscussionListItem .DiscussionListItem-content.unread {
-  background-color: #313131 !important;
-}
-
-.App.hasPane .DiscussionListItem .DiscussionListItem-content.read {
-  background-color: #212121 !important;
-}
-
-.App.hasPane .DiscussionListItem .DiscussionListItem-content:hover,
-.App.hasPane .DiscussionListItem .DiscussionListItem-content:focus {
-  background-color: #444444 !important;
-}
-
-.App.hasPane
-  .DiscussionListItem
-  .DiscussionListItem-content.unread:hover
-  .DiscussionListItem-info
-  .item-tags
-  .TagLabel,
-.App.hasPane
-  .DiscussionListItem
-  .DiscussionListItem-content.unread:focus
-  .DiscussionListItem-info
-  .item-tags
-  .TagLabel {
-  background-color: #000 !important;
-  color: #fff !important;
-}
-
-.App.hasPane
-  .DiscussionListItem
-  .DiscussionListItem-content.unread:hover
-  .DiscussionListItem-info
-  .item-tags
-  .TagLabel-text,
-.App.hasPane
-  .DiscussionListItem
-  .DiscussionListItem-content.unread:focus
-  .DiscussionListItem-info
-  .item-tags
-  .TagLabel-text {
-  color: #fff !important;
-}
-
-/* #endregion */
-
-/* #region Site Header */
-
-.App-header .FormControl {
-  color: #eee;
-  background-color: #212121;
-}
-.App-header .FormControl:focus {
-  color: #eee;
-  background-color: #313131;
-}
-
-/* Search Results */
-
-.Search-results .Dropdown-header {
-  background-color: #212121 !important;
-  color: #aaa !important;
-}
-
-.Search-results a.hasIcon {
-  background: #151515;
-}
-
-.Search-results a.hasIcon:hover {
-  background: #313131;
-}
-
-.Search-results .UserSearchResult,
-.Search-results .DiscussionSearchResult,
-.Search-results .SearchResult {
-  background-color: #212121;
-  color: #ccc;
-}
-
-.Search-results .UserSearchResult:hover,
-.Search-results .DiscussionSearchResult:hover,
-.Search-results .SearchResult:hover {
-  background-color: #313131;
-  color: #fff;
-}
-
-.Search-results .UserSearchResult .username,
-.Search-results .DiscussionSearchResult .username,
-.Search-results .SearchResult .username {
-  color: #ccc;
-}
-
-.Search-results .UserSearchResult:hover .username,
-.Search-results .DiscussionSearchResult:hover .username,
-.Search-results .SearchResult:hover .username {
   color: #ffffff;
 }
-
-.Search-results .UserSearchResult.active,
-.Search-results .DiscussionSearchResult.active,
-.Search-results .SearchResult.active,
-.Dropdown-menu > li.active > a,
-.Dropdown-menu > li.active > button {
-  background-color: #313131 !important;
+body.dark {
+  /* #region Placeholders */
+  /* #endregion */
+  /* #region Spoilers */
+  /* #endregion */
+  /* #region Tags Page */
+  /* #endregion */
+  /* #region Nav Pane */
+  /* #endregion */
+  /* #region Site Header */
+  /* Search Results */
+  /* #region Notifications */
+  /* #endregion */
+  /* #endregion */
+  /* #region Post Composer */
+  /* #endregion */
+  /* #region Posts */
+  /* Quotes */
+  /* Inline monospace */
+  /* Code blocks */
+  /* #region Post Header */
+  /* Overrides default no-group avatar border to dark instead of light */
+  /* Darkens letter-based avatars */
+  /* #endregion */
+  /* #region Post Footer */
+  /* #region Best Answers */
+  /* #endregion */
+  /* #region Post Actions */
+  /* #region Reactions */
+  /* #region Reaction Button */
+  /* #endregion */
+  /* #endregion */
+  /* #endregion */
+  /* #endregion */
+  /* #endregion */
+  /* #region Buttons */
+  /* #region Follow Button */
+  /* #endregion */
+  /* #region Primary Discussion Button */
+  /* #endregion */
+  /* #endregion */
+  /* #region Dropdowns */
+  /* #endregion */
+  /* #region Post Scrubber */
+  /* #endregion */
+  /* #region Emoji */
+  /* #endregion */
+  /* #region Modals */
+  /* #endregion */
+  /* #region Discussion Feed */
+  /* #endregion */
+  /* #region Feed Navbar */
+  /* #endregion */
+  /* #region User Page */
+  /* #region Edit User Dialog */
+  /* #endregion */
+  /* #endregion */
+  /* #region Mobile-specific CSS */
+  /* #endregion */
+  /* #region User Settings */
+  /* #endregion */
+  /* #region Tables */
+  /* #endregion */
 }
-
-/* #region Notifications */
-
-.NotificationList {
-  background-color: #212121;
+body.dark .Hero::after {
+  display: block;
+  content: "You're using dark mode - a member created extension for the giffgaff community.";
+  background: #313131;
+  color: #cccccc;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 0;
+  text-align: center;
 }
-
-.NotificationList-header h4,
-.NotificationList-header .Button {
-  color: #aaa;
+body.dark .PageHero-title > a {
+  color: rgba(0, 0, 0, 0.8);
 }
-
-.NotificationGroup-header {
-  color: #eee !important;
+body.dark .Header-navigation .Navigation-pin,
+body.dark .Header-navigation .Navigation-back {
+  color: #ffffff;
+  background: #000000;
 }
-
-.Notification.Notification--postReacted.unread {
+body.dark .FormControl:focus,
+body.dark .FormControl.focus {
+  color: #eeeeee;
+  border-color: #444444;
+}
+body.dark .Form-group > label {
+  color: #eeeeee;
+}
+body.dark hr {
+  border-color: #444444;
+}
+body.dark .Placeholder p {
+  color: #eeeeee;
+}
+body.dark .Spoiler--toggle,
+body.dark .Spoiler--content {
   background-color: #313131;
 }
-
-.NotificationGroup-content .Notification:hover {
-  background-color: #444444;
+body.dark div.TagsPage-content .TagTiles > li.TagTile {
+  background-color: #212121 !important;
 }
-
-.Notification-content {
-  color: #ddd !important;
+body.dark .TagsPage-content .TagTiles > li.TagTile a {
+  color: #eeeeee !important;
 }
-
-.Notification-excerpt {
-  color: #999 !important;
+body.dark .TagsPage-content .TagTiles > li.TagTile .TagTile-info .TagTile-description {
+  color: #bbbbbb !important;
 }
-
-/* #endregion */
-
-/* #endregion */
-
-/* #region Post Composer */
-
-.Composer,
-.Composer.active {
-  background-color: #212121f9;
-  color: #fff;
-}
-
-.Composer .Composer-controls {
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.unread {
   background-color: #313131 !important;
 }
-
-.Composer .ComposerBody-header h3 {
-  color: #ddd !important;
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.read {
+  background-color: #212121 !important;
 }
-
-.Composer .TextEditor textarea {
-  color: #eee !important;
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content:hover,
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content:focus {
+  background-color: #444444 !important;
 }
-
-.Composer .TextEditor-controls li:not(:first-child) .Button {
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.unread:hover .DiscussionListItem-info .item-tags .TagLabel,
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.unread:focus .DiscussionListItem-info .item-tags .TagLabel {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.unread:hover .DiscussionListItem-info .item-tags .TagLabel-text,
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.unread:focus .DiscussionListItem-info .item-tags .TagLabel-text {
+  color: #ffffff !important;
+}
+body.dark .App-header .FormControl {
+  color: #eeeeee;
+  background-color: #212121;
+}
+body.dark .App-header .FormControl:focus {
+  color: #eeeeee;
+  background-color: #313131;
+}
+body.dark .Dropdown-menu.Search-results {
+  background: #212121;
+}
+body.dark .Search-results .Dropdown-header {
+  background-color: #212121 !important;
+  color: #aaaaaa !important;
+}
+body.dark .Search-results a.hasIcon {
+  background: #212121;
+}
+body.dark .Search-results a.hasIcon:hover {
+  background: #313131;
+}
+body.dark .Search-results .UserSearchResult,
+body.dark .Search-results .DiscussionSearchResult,
+body.dark .Search-results .SearchResult {
+  background: #212121;
+}
+body.dark .Search-results .Dropdown-header .Search-results .UserSearchResult,
+body.dark .Search-results .DiscussionSearchResult,
+body.dark .Search-results .SearchResult {
+  background-color: #212121;
+  color: #cccccc;
+}
+body.dark .Search-results .UserSearchResult:hover,
+body.dark .Search-results .DiscussionSearchResult:hover,
+body.dark .Search-results .SearchResult:hover {
+  background-color: #313131;
+  color: #ffffff;
+}
+body.dark .Search-results .UserSearchResult .username,
+body.dark .Search-results .DiscussionSearchResult .username,
+body.dark .Search-results .SearchResult .username {
+  color: #cccccc;
+}
+body.dark .Search-results .UserSearchResult:hover .username,
+body.dark .Search-results .DiscussionSearchResult:hover .username,
+body.dark .Search-results .SearchResult:hover .username {
+  color: #ffffff;
+}
+body.dark .Search-results .UserSearchResult.active > *,
+body.dark .Search-results .DiscussionSearchResult.active > *,
+body.dark .Search-results .SearchResult.active > * {
+  background-color: #444444 !important;
+}
+body.dark .NotificationList {
+  background-color: #212121;
+}
+body.dark .NotificationList-header h4,
+body.dark .NotificationList-header .Button {
+  color: #aaaaaa;
+}
+body.dark .NotificationGroup-header {
+  color: #eeeeee !important;
+}
+body.dark .Notification.Notification--postReacted.unread {
+  background-color: #313131;
+}
+body.dark .NotificationGroup-content .Notification:hover {
+  background-color: #444444;
+}
+body.dark .Notification-content {
+  color: #dddddd !important;
+}
+body.dark .Notification-excerpt {
+  color: #999999 !important;
+}
+body.dark ::-moz-placeholder {
+  color: #999999 !important;
+  opacity: 1;
+}
+body.dark ::-webkit-input-placeholder {
+  color: #999999 !important;
+}
+body.dark ::-ms-placeholder {
+  color: #999999 !important;
+}
+body.dark ::placeholder {
+  color: #999999 !important;
+}
+body.dark .Composer,
+body.dark .Composer.active {
+  background-color: rgba(33, 33, 33, 0.975);
+  color: #ffffff;
+}
+body.dark .Composer .Composer-controls {
+  background-color: #313131 !important;
+}
+body.dark .Composer .ComposerBody-header h3 {
+  color: #dddddd !important;
+}
+body.dark .Composer .ComposerBody-loading {
+  background: #212121 !important;
+}
+body.dark .Composer .TextEditor textarea {
+  color: #eeeeee !important;
+}
+body.dark .Composer .TextEditor-controls li:not(:first-child) .Button {
   background-color: unset !important;
 }
-
-.Composer .TextEditor-controls li:nth-child(2) .Button:hover,
-.Composer .TextEditor-controls li:nth-child(2) .Button:focus,
-.Composer .TextEditor-controls .TextEditor-toolbar .Button:hover,
-.Composer .TextEditor-controls .TextEditor-toolbar .Button:focus {
+body.dark .Composer .TextEditor-controls li:nth-child(2) .Button:hover,
+body.dark .Composer .TextEditor-controls li:nth-child(2) .Button:focus,
+body.dark .Composer .TextEditor-controls .TextEditor-toolbar .Button:hover,
+body.dark .Composer .TextEditor-controls .TextEditor-toolbar .Button:focus {
   background-color: #444444 !important;
   border-radius: 50%;
 }
-.Composer .TextEditor-controls li:nth-child(3) .Button:hover,
-.Composer .TextEditor-controls li:nth-child(3) .Button:focus {
+body.dark .Composer .TextEditor-controls li:nth-child(3) .Button:hover,
+body.dark .Composer .TextEditor-controls li:nth-child(3) .Button:focus {
   background-color: #444444 !important;
 }
-
-/* #endregion */
-
-/* #region Posts */
-
-.PostStream-item,
-.Post {
+body.dark .PostStream-item,
+body.dark .Post {
   background: #212121 !important;
 }
-
-.Post-body p,
-.Post-body ul,
-.Post-body ol,
-.Post-body blockquote {
-  color: #fff;
+body.dark .Post-body p,
+body.dark .Post-body ul,
+body.dark .Post-body ol,
+body.dark .Post-body blockquote {
+  color: #ffffff;
 }
-
-.Post-body a {
-  color: #bbb !important;
-  border-color: #bbb;
+body.dark .Post-body a {
+  color: #bbbbbb !important;
+  border-color: #bbbbbb;
 }
-
-.Post-body a:hover,
-.Post-body a:focus,
-.Post-body a:active {
-  color: #eee !important;
-  border-color: #fff;
+body.dark .Post-body a:hover,
+body.dark .Post-body a:focus,
+body.dark .Post-body a:active {
+  color: #eeeeee !important;
+  border-color: #ffffff;
 }
-
-/* Quotes */
-.Post-body blockquote {
-  color: #bbb !important;
+body.dark .Post-body blockquote {
+  color: #bbbbbb !important;
   background-color: #313131 !important;
   border-color: #3a3a3a !important;
 }
-
-/* Inline monospace */
-.Post-body code {
+body.dark .Post-body code {
   font-family: "Fira Code", Consolas, monospace;
   background-color: #313131;
-  color: #eee !important;
+  color: #eeeeee !important;
 }
-
-/* Code blocks */
-.Post-body pre {
+body.dark .Post-body pre {
   background-color: #313131;
 }
-
-/* #region Tables */
-
-.PostStream-item .Post-body table {
+body.dark .MentionsDropdown .PostPreview,
+body.dark .PostMention-preview .PostPreview,
+body.dark .Post-mentionedBy-preview .PostPreview {
+  color: #dddddd;
+}
+body.dark .PostPreview .username {
+  color: #aaaaaa !important;
+}
+body.dark .Post-body h1,
+body.dark .Post-body h2,
+body.dark .Post-body h3,
+body.dark .Post-body h4,
+body.dark .Post-body h5,
+body.dark .Post-body h6 {
+  color: #ffffff;
+}
+body.dark .Post-header,
+body.dark .Post-header a {
+  color: #777;
+}
+body.dark .Avatar.PostUser-avatar {
+  position: relative;
+}
+body.dark .Post-header span.Avatar.PostUser-avatar:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  border: 3px solid rgba(85, 85, 85, 0.25);
+}
+body.dark .MentionsDropdown .PostPreview .Avatar:after,
+body.dark .PostMention-preview .PostPreview .Avatar:after,
+body.dark .Post-mentionedBy-preview .PostPreview .Avatar:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+body.dark .Post-header .UserCard .username {
+  color: #eeeeee !important;
+}
+body.dark .Post-header .username {
+  color: #bbbbbb;
+}
+body.dark .DiscussionPage .PostStream .PostStream-item .Post .item-bestAnswerPost {
+  background-color: #313131;
+  color: #eeeeee;
+  border-left: 4px solid rgba(88, 164, 0, 0.5);
+}
+body.dark .DiscussionPage .PostStream .PostStream-item .Post .item-bestAnswerPost .Post-body a {
+  color: unset;
+  border-bottom-color: unset;
+}
+body.dark .Post--BestAnswer a .username {
+  color: #000000;
+}
+body.dark .PostStream-item .Post aside.Post-actions,
+body.dark aside.Post-actions button {
+  color: #bbbbbb;
+}
+body.dark .PostStream-item .Post aside.Post-actions button:hover,
+body.dark .PostStream-item .Post aside.Post-actions button:focus {
+  color: #eeeeee;
+}
+body.dark .Reactions .CommentPost--Reactions {
+  background-color: #313131;
+}
+body.dark .Reactions button.Button svg.button-react path,
+body.dark .Reactions button.Button svg.button-react polygon {
+  fill: #eeeeee;
+}
+body.dark .DiscussionPage .PostStream .PostStream-item .Post .item-replies {
+  color: #999999;
+}
+body.dark .Post-mentionedBy a,
+body.dark .Post-mentionedBy a .username {
+  color: #dddddd !important;
+}
+body.dark .Post-mentionedBy a:hover,
+body.dark .Post-mentionedBy a:hover > * {
+  color: #ffffff !important;
+}
+body.dark .Button {
+  background: #313131;
+  color: #eeeeee;
+}
+body.dark .Dropdown.SubscriptionMenu .Button.SubscriptionMenu-button--follow,
+body.dark .Dropdown.SubscriptionMenu-button.SubscriptionMenu-button--follow {
+  background: #00538a60;
+}
+body.dark .SubscriptionMenuItem-description {
+  color: #cccccc;
+}
+body.dark button.Button--primary .Button-label:before,
+body.dark button.Button--primary .Button-label:after {
+  filter: brightness(2.25);
+}
+body.dark .DiscussionPage .DiscussionPage-nav .item-controls .itemCount1 button.Button--primary {
+  background-color: #212121;
+}
+body.dark .DiscussionPage .DiscussionPage-nav .item-controls .itemCount1 button.Button--primary .Button-label {
+  border-color: #212121;
+  color: #000000;
+}
+body.dark .Button--flat {
+  background: transparent;
+}
+body.dark .Dropdown button.Dropdown-toggle {
+  color: #eeeeee;
+}
+body.dark .Post .Dropdown-menu {
+  background: #313131 !important;
+  color: #ffffff !important;
+}
+body.dark .Dropdown.ButtonGroup button.Dropdown-toggle:hover,
+body.dark .Dropdown.ButtonGroup button.Dropdown-toggle:focus,
+body.dark .Dropdown.ButtonGroup button.Dropdown-toggle[aria-expanded="true"] {
+  color: #ffffff;
+  background: #313131;
+}
+body.dark .Dropdown.ButtonGroup .Dropdown-menu {
+  background-color: #212121;
+  color: #eeeeee !important;
+}
+body.dark .Dropdown-menu > li > a,
+body.dark .Dropdown-menu > li > button,
+body.dark .Dropdown-menu > li > span {
+  color: #bbbbbb;
+}
+body.dark *:not(.item-nav) > .Dropdown .Dropdown-menu > li.active > a,
+body.dark *:not(.item-nav) > .Dropdown .Dropdown-menu > li.active > button {
+  background: #313131;
+}
+body.dark *:not(.item-nav) > .Dropdown .Dropdown-menu > li > a:hover,
+body.dark *:not(.item-nav) > .Dropdown .Dropdown-menu > li > a:focus,
+body.dark *:not(.item-nav) > .Dropdown .Dropdown-menu > li > button:hover,
+body.dark *:not(.item-nav) > .Dropdown .Dropdown-menu > li > button:focus {
+  background-color: #313131;
+  color: #ffffff;
+}
+body.dark .Scrubber a:hover,
+body.dark .Scrubber a:focus {
+  color: #aaaaaa;
+}
+body.dark .PostStreamScrubber .Scrubber .Scrubber-before,
+body.dark .PostStreamScrubber .Scrubber .Scrubber-after,
+body.dark .PostStreamScrubber .Scrubber .Scrubber-handle {
+  border-color: #aaaaaa;
+}
+body.dark .PostStreamScrubber .Scrubber .Scrubber-handle .Scrubber-bar {
+  background-color: #aaaaaa;
+}
+body.dark .PostStreamScrubber .Scrubber .Scrubber-handle {
+  background-color: #313131;
+  color: #eeeeee;
+}
+body.dark .PostStreamScrubber .Scrubber .Scrubber-handle .Scrubber-description {
+  color: #999999;
+}
+body.dark img.emoji {
+  /* Dim emojis by 15% */
+  filter: brightness(0.85);
+}
+body.dark .EmojiDropdown .Dropdown-header {
+  color: #ffffff !important;
+  padding-top: 12px;
+}
+body.dark .Modal-content,
+body.dark .Modal-body,
+body.dark .Modal-header {
+  color: #cccccc !important;
+  background-color: #151515 !important;
+}
+body.dark .Modal-header h1,
+body.dark .Modal-header h2,
+body.dark .Modal-header h3,
+body.dark .Modal-header h4,
+body.dark .Modal-header h5,
+body.dark .Modal-header h6 {
+  color: #cccccc !important;
+}
+body.dark .Modal .checkbox strong {
+  color: #ffffff;
+}
+body.dark .Modal .FormControl {
+  background-color: #212121;
+  color: #eeeeee;
+}
+body.dark .Modal .FormControl:focus {
+  background-color: #313131;
+}
+body.dark .Modal .VotesModal-list h4 {
+  color: #cccccc !important;
+}
+body.dark .Modal .VotesModal-list h2 {
+  color: #ffffff !important;
+}
+body.dark .Modal .VotesModal-list a {
+  color: #aaaaaa !important;
+}
+body.dark .helpText {
+  color: #aaaaaa;
+}
+body.dark .SelectTagList > li.active {
+  background: #313131 !important;
+  color: #ffffff !important;
+}
+body.dark .SelectTagList > li.pinned + li:not(.pinned) {
+  border-color: #555555 !important;
+}
+body.dark .SelectTagList > li.selected.colored .TagIcon:before {
+  color: #000000 !important;
+}
+body.dark .SelectTagList > li.active {
+  color: #ffffff !important;
+}
+body.dark .SelectTagList > li.active .TagIcon {
+  background: #aaaaaa !important;
+}
+body.dark .SelectTagList > li.active:hover .TagIcon {
+  background: #ffffff !important;
+}
+body.dark .DiscussionListItem {
+  background: #212121 !important;
+}
+body.dark .DiscussionListItem:hover,
+body.dark .DiscussionListItem:focus {
+  background: #313131 !important;
+}
+body.dark .DiscussionListItem-content,
+body.dark .DiscussionListItem-info,
+body.dark .DiscussionListItem-title,
+body.dark .DiscussionListItem-count {
+  color: #eeeeee !important;
+}
+body.dark .DiscussionListItem-title mark {
+  color: #ffffff !important;
+}
+body.dark .DiscussionList:not(.DiscussionList--searchResults) .read .DiscussionListItem-title,
+body.dark .DiscussionList:not(.DiscussionList--searchResults) .read .DiscussionListItem-info,
+body.dark .DiscussionList:not(.DiscussionList--searchResults) .read .DiscussionListItem-count,
+body.dark .DiscussionList:not(.DiscussionList--searchResults) .read .DiscussionListItem-content .item-excerpt {
+  color: #999999 !important;
+}
+body.dark .DiscussionListItem .DiscussionListItem-content .item-excerpt {
+  color: #cccccc !important;
+}
+body.dark .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li * {
+  color: #aaaaaa !important;
+}
+body.dark .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li.active * {
+  color: #dddddd !important;
+}
+body.dark .sideNav .Dropdown--select .Dropdown-menu {
+  background: unset;
+}
+body.dark .item-nav > .Dropdown .Dropdown-menu > li > a:hover,
+body.dark .item-nav > .Dropdown .Dropdown-menu > li > a:focus {
+  color: #dddddd;
+}
+body.dark .App.hasPane .DiscussionPage-list {
+  background: #151515;
+}
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-controls .Button--icon {
+  color: inherit;
+}
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-terminalPost,
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-discussion-views,
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-discussion-views::before,
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-recipients .RecipientLabel-text,
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-recipients .RecipientLabel::after,
+body.dark .App.hasPane .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-excerpt {
+  color: #ffffff;
+}
+body.dark .UserPage .PostsUserPage .PostsUserPage-list > li {
+  background-color: #212121;
+}
+body.dark .sideNav .Dropdown--select .Dropdown-menu > li > a {
+  color: #bbbbbb;
+}
+body.dark .sideNav .Dropdown--select .Dropdown-menu > li.active > a,
+body.dark .sideNav .Dropdown--select .Dropdown-menu > li:hover > a,
+body.dark .sideNav .Dropdown--select .Dropdown-menu > li:focus > a {
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  body.dark .App-content {
+    background: #151515;
+  }
+  body.dark .DiscussionListItem .DiscussionListItem-content.unread {
+    background-color: #313131 !important;
+  }
+  body.dark .DiscussionListItem .DiscussionListItem-content.read {
+    background-color: #212121 !important;
+  }
+  body.dark .Dropdown .Dropdown-menu > li > a,
+  body.dark .Dropdown .Dropdown-menu > li > button {
+    background: #313131 !important;
+    color: #eeeeee !important;
+  }
+  body.dark .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li * {
+    color: #eeeeee !important;
+  }
+  body.dark .DiscussionPage .PostStream .PostStream-item .Post.ReplyPlaceholder {
+    background-color: #444444;
+  }
+  body.dark .Dropdown .Dropdown-menu > li > a *,
+  body.dark .Dropdown .Dropdown-menu > li > button * {
+    font-size: 16px !important;
+  }
+  body.dark .SelectTagListItem-name,
+  body.dark .SelectTagListItem-description {
+    font-style: 14px !important;
+  }
+  body.dark .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-terminalPost,
+  body.dark .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-discussion-views,
+  body.dark .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-discussion-views::before,
+  body.dark .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-recipients .RecipientLabel-text,
+  body.dark .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-recipients .RecipientLabel::after,
+  body.dark .DiscussionListItem .DiscussionListItem-content.read .DiscussionListItem-info .item-excerpt {
+    color: #999999;
+  }
+  body.dark .DiscussionListItem .DiscussionListItem-content.unread .DiscussionListItem-info .item-terminalPost,
+  body.dark .DiscussionListItem .DiscussionListItem-content.unread .DiscussionListItem-info .item-discussion-views,
+  body.dark .DiscussionListItem .DiscussionListItem-content.unread .DiscussionListItem-info .item-discussion-views::before,
+  body.dark .DiscussionListItem .DiscussionListItem-content.unread .DiscussionListItem-info .item-recipients .RecipientLabel-text,
+  body.dark .DiscussionListItem .DiscussionListItem-content.unread .DiscussionListItem-info .item-recipients .RecipientLabel::after,
+  body.dark .DiscussionListItem .DiscussionListItem-content.unread .DiscussionListItem-info .item-excerpt {
+    color: #cccccc;
+  }
+  body.dark .NotificationList {
+    box-shadow: 0 0 10px 0px #000000bb;
+  }
+  body.dark .NotificationList::after {
+    display: block;
+    height: 4px;
+    width: 100%;
+    content: "";
+  }
+  body.dark .NotificationGroup {
+    padding-top: 4px;
+  }
+  body.dark .DiscussionListItem-title mark {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  body.dark .DiscussionList.DiscussionList--searchResults .DiscussionListItem .DiscussionListItem-content.unread .DiscussionListItem-title {
+    font-weight: normal;
+  }
+  body.dark .SelectTagList > li.pinned:not(.child),
+  body.dark .SelectTagList > li.pinned:not(.child) i {
+    color: #eeeeee !important;
+  }
+  body.dark .TextEditor textarea {
+    line-height: 0.9 !important;
+    font-size: 14px !important;
+  }
+}
+body.dark legend {
+  color: #ffffff;
+}
+body.dark .NotificationGrid td,
+body.dark .NotificationGrid th {
+  color: #ffffff;
+}
+body.dark .UserPage .UserPage-content .NotificationGrid {
+  background: #313131;
+}
+body.dark .item-notifications .NotificationGrid td,
+body.dark .item-notifications .NotificationGrid th {
+  border-color: #444444;
+}
+body.dark .Checkbox--switch .Checkbox-display {
+  background: #d0021b;
+}
+body.dark .on.Checkbox--switch .Checkbox-display {
+  background: #58a400;
+}
+body.dark .disabled .Checkbox-display {
+  color: rgba(255, 255, 255, 0.4) !important;
+  cursor: not-allowed;
+}
+body.dark .PollOption .PollBar:hover {
+  background: rgba(68, 68, 68, 0.8) !important;
+}
+body.dark .PollOption .PollBar,
+body.dark .PollOption .PollBar * {
+  cursor: pointer !important;
+}
+body.dark .PollOption .PollBar[data-selected="true"] {
+  border-color: #999999 !important;
+}
+body.dark .PollOption .PollBar .PollOption-active {
+  background: #666666 !important;
+}
+body.dark .PollVoted .PollBar[data-selected="true"] .PollPercent {
+  color: #aaaaaa !important;
+}
+body.dark label.checkbox > input[type="checkbox"] {
+  visibility: hidden !important;
+  margin-right: 16px !important;
+  position: relative !important;
+}
+body.dark label.checkbox > input[type="checkbox"]::before,
+body.dark label.checkbox > input[type="checkbox"]::after {
+  position: absolute !important;
+}
+body.dark label.checkbox > input[type="checkbox"]::before {
+  content: "" !important;
+  display: inline-block !important;
+  visibility: visible !important;
+  height: 20px !important;
+  width: 20px !important;
+  border: 2px solid #ffffff !important;
+  /* centres with label text */
+  top: -3px !important;
+  cursor: pointer !important;
+}
+body.dark label.checkbox > input[type="checkbox"]:disabled::before {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+body.dark label.checkbox > input[type="checkbox"]:checked::after {
+  content: "" !important;
+  display: inline-block !important;
+  visibility: visible !important;
+  height: 5px !important;
+  width: 10px !important;
+  border-left: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+  transform: rotate(-45deg) !important;
+  left: 5px !important;
+  bottom: 4px !important;
+  cursor: pointer !important;
+}
+body.dark label.checkbox > input[type="checkbox"]:disabled::before,
+body.dark label.checkbox > input[type="checkbox"]:disabled::after {
+  cursor: not-allowed !important;
+}
+body.dark .SettingsPage .item-notifications .NotificationGrid-checkbox.highlighted .Checkbox:not(.disabled),
+body.dark .SettingsPage .item-notifications .NotificationGrid-checkbox .Checkbox:hover:not(.disabled) {
+  background: #444444;
+}
+body.dark table {
   background-color: #262626;
   background-clip: content-box;
   max-width: max-content;
 }
-
-.PostStream-item .Post-body table td,
-.PostStream-item .Post-body table th {
+body.dark table td,
+body.dark table th {
   border-color: #444444;
 }
-
-/* #endregion */
-
-.MentionsDropdown .PostPreview,
-.PostMention-preview .PostPreview,
-.Post-mentionedBy-preview .PostPreview {
-  color: #ddd;
-}
-
-.PostPreview .username {
-  color: #aaa !important;
-}
-
-/* #region Post Header */
-
-/* Overrides default no-group avatar border to dark instead of light */
-.Post-header .Avatar.PostUser-avatar {
-  border-color: #555 !important;
-}
-
-/* Darkens letter-based avatars */
-.Post-header span.Avatar.PostUser-avatar:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #0004;
-  border-radius: 50%;
-}
-
-.Post-header .UserCard .username {
-  color: #eee !important;
-}
-
-.Post-header .username {
-  color: #bbb;
-}
-
-/* #endregion */
-
-/* #region Post Footer */
-
-/* #region Best Answers */
-
-.DiscussionPage .PostStream .PostStream-item .Post .item-bestAnswerPost {
-  background-color: #313131;
-  color: #eee;
-}
-
-.Post--BestAnswer a .username {
-  color: #000;
-}
-
-.DiscussionPage
-  .PostStream
-  .PostStream-item
-  .Post
-  .item-bestAnswerPost
-  .Post-body
-  a:hover,
-.DiscussionPage
-  .PostStream
-  .PostStream-item
-  .Post
-  .item-bestAnswerPost
-  .Post-body
-  a:focus,
-.DiscussionPage
-  .PostStream
-  .PostStream-item
-  .Post
-  .item-bestAnswerPost
-  .Post-body
-  a:active {
-  border-color: #06ce85;
-}
-
-/* #endregion */
-
-/* #region Post Actions */
-
-.PostStream-item .Post aside.Post-actions,
-aside.Post-actions button {
-  color: #bbb;
-}
-
-.PostStream-item .Post aside.Post-actions button:hover,
-.PostStream-item .Post aside.Post-actions button:focus {
-  color: #eee;
-}
-
-/* #region Reactions */
-
-.Reactions .CommentPost--Reactions {
-  background-color: #313131;
-}
-
-/* #region Reaction Button */
-
-.Reactions button.Button svg.button-react path,
-.Reactions button.Button svg.button-react polygon {
-  fill: #eee;
-}
-
-/* #endregion */
-
-/* #endregion */
-
-/* #endregion */
-
-/* #endregion */
-
-/* #endregion */
-
-/* #region Buttons */
-
-.Button {
+body.dark .flatpickr-calendar {
   background: #313131;
-  color: #eee;
+  box-shadow: 1px 0 0 #666666, -1px 0 0 #666666, 0 1px 0 #666666, 0 -1px 0 #666666, 0 3px 13px rgba(0, 0, 0, 0.08);
 }
-
-/* #region Follow Button */
-
-.Dropdown.SubscriptionMenu .Button.SubscriptionMenu-button--follow,
-.Dropdown.SubscriptionMenu-button.SubscriptionMenu-button--follow {
-  background: #00538a60;
+body.dark .flatpickr-calendar .flatpickr-months .flatpickr-prev-month,
+body.dark .flatpickr-calendar .flatpickr-months .flatpickr-next-month {
+  color: #ffffff;
+  fill: #ffffff;
 }
-
-/* #endregion */
-
-/* #region Primary Discussion Button */
-
-button.Button--primary .Button-label:before,
-button.Button--primary .Button-label:after {
-  filter: brightness(2.25);
+body.dark .flatpickr-calendar .flatpickr-months .flatpickr-prev-month:hover svg,
+body.dark .flatpickr-calendar .flatpickr-months .flatpickr-next-month:hover svg {
+  fill: #cccccc;
 }
-
-.DiscussionPage
-  .DiscussionPage-nav
-  .item-controls
-  .itemCount1
-  button.Button--primary {
-  background-color: #212121;
+body.dark .flatpickr-calendar .flatpickr-months .flatpickr-month {
+  color: #ffffff;
+  fill: #ffffff;
 }
-
-.DiscussionPage
-  .DiscussionPage-nav
-  .item-controls
-  .itemCount1
-  button.Button--primary
-  .Button-label {
-  border-color: #212121;
-  color: #000;
+body.dark .flatpickr-calendar span.flatpickr-weekday {
+  color: #eeeeee;
+  padding-top: 8px;
 }
-
-/* #endregion */
-
-.Button--flat {
-  background: transparent;
+body.dark .flatpickr-calendar .flatpickr-day {
+  color: #eeeeee;
 }
-
-/* #endregion */
-
-/* #region Dropdowns */
-
-.Dropdown:not(.PostStreamScrubber) buttonbody {
-  background: #151515;
-  color: #fff;
+body.dark .flatpickr-calendar .flatpickr-day.flatpickr-disabled,
+body.dark .flatpickr-calendar .flatpickr-day.flatpickr-disabled:hover {
+  color: #666666;
 }
-
-.Dropdown:not(.PostStreamScrubber) button.Dropdown-toggle {
-  color: #eee;
+body.dark .flatpickr-calendar .flatpickr-day.today {
+  border-color: #fcc31e;
 }
-
-.Dropdown:not(.PostStreamScrubber) button.Dropdown-toggle:hover,
-.Dropdown:not(.PostStreamScrubber) button.Dropdown-toggle:focus,
-.Dropdown:not(.PostStreamScrubber)
-  button.Dropdown-toggle[aria-expanded="true"] {
-  color: #fff;
-  background: #313131;
+body.dark .flatpickr-calendar .flatpickr-day.flatpickr-disabled,
+body.dark .flatpickr-calendar .flatpickr-day.flatpickr-disabled:hover,
+body.dark .flatpickr-calendar .flatpickr-day.prevMonthDay,
+body.dark .flatpickr-calendar .flatpickr-day.nextMonthDay,
+body.dark .flatpickr-calendar .flatpickr-day.notAllowed,
+body.dark .flatpickr-calendar .flatpickr-day.notAllowed.prevMonthDay,
+body.dark .flatpickr-calendar .flatpickr-day.notAllowed.nextMonthDay {
+  color: #bbbbbb;
 }
-
-.Dropdown-menu {
-  background-color: #212121;
-  color: #eee !important;
+body.dark .flatpickr-calendar .flatpickr-day.inRange,
+body.dark .flatpickr-calendar .flatpickr-day.prevMonthDay.inRange,
+body.dark .flatpickr-calendar .flatpickr-day.nextMonthDay.inRange,
+body.dark .flatpickr-calendar .flatpickr-day.today.inRange,
+body.dark .flatpickr-calendar .flatpickr-day.prevMonthDay.today.inRange,
+body.dark .flatpickr-calendar .flatpickr-day.nextMonthDay.today.inRange,
+body.dark .flatpickr-calendar .flatpickr-day:hover,
+body.dark .flatpickr-calendar .flatpickr-day.prevMonthDay:hover,
+body.dark .flatpickr-calendar .flatpickr-day.nextMonthDay:hover,
+body.dark .flatpickr-calendar .flatpickr-day:focus,
+body.dark .flatpickr-calendar .flatpickr-day.prevMonthDay:focus,
+body.dark .flatpickr-calendar .flatpickr-day.nextMonthDay:focus {
+  color: #ffffff;
+  background: #444444;
+  border-color: #444444;
+  outline: 0;
+  cursor: pointer;
 }
-
-.Dropdown-menu > li > a,
-.Dropdown-menu > li > button,
-.Dropdown-menu > li > span {
-  color: #bbb;
+body.dark .flatpickr-calendar .flatpickr-monthDropdown-months option {
+  background-color: #444444 !important;
 }
-
-.Dropdown-menu > li > a:hover,
-.Dropdown-menu > li > a:focus,
-.Dropdown:not(.PostStreamScrubber) .Dropdown-menu > li > button:hover,
-.Dropdown:not(.PostStreamScrubber) .Dropdown-menu > li > button:focus {
-  background-color: #313131;
-  color: #fff;
+body.dark .flatpickr-calendar .flatpickr-time input {
+  color: #eeeeee;
 }
-
-/* #endregion */
-
-/* #region Post Scrubber */
-
-.Scrubber a:hover,
-.Scrubber a:focus {
-  color: #aaa;
+body.dark .flatpickr-calendar .flatpickr-time input:hover,
+body.dark .flatpickr-calendar .flatpickr-time .flatpickr-am-pm:hover,
+body.dark .flatpickr-calendar .flatpickr-time input:focus,
+body.dark .flatpickr-calendar .flatpickr-time .flatpickr-am-pm:focus {
+  background: #555555;
 }
-
-.PostStreamScrubber .Scrubber .Scrubber-before,
-.PostStreamScrubber .Scrubber .Scrubber-after,
-.PostStreamScrubber .Scrubber .Scrubber-handle {
-  border-color: #aaa;
+body.dark .flatpickr-calendar .flatpickr-time .flatpickr-time-separator,
+body.dark .flatpickr-calendar .flatpickr-time .flatpickr-am-pm {
+  color: #eeeeee;
 }
-
-.PostStreamScrubber .Scrubber .Scrubber-handle .Scrubber-bar {
-  background-color: #aaa;
-}
-
-.PostStreamScrubber .Scrubber .Scrubber-handle {
-  background-color: #313131;
-  color: #eee;
-}
-
-.PostStreamScrubber .Scrubber .Scrubber-handle .Scrubber-description {
-  color: #999;
-}
-
-/* #endregion */
-
-/* #region Emoji */
-
-img.emoji {
-  /* Dim emojis by 15% */
-  filter: brightness(0.85);
-}
-
-/* #endregion */
-
-/* #region Modals */
-
-#modal .Modal,
-.modal-open .Modal-header,
-.modal-open .Modal-body {
-  color: #bbb;
-  background-color: #151515 !important;
-}
-
-.FlagPostModal .checkbox strong {
-  color: #fff;
-}
-
-.Modal-body .FormControl {
-  background-color: #212121;
-  color: #eee;
-}
-
-.Modal-body .FormControl:focus {
-  background-color: #313131;
-}
-
-/* #endregion */
-
-/* #region Discussion Feed */
-
-.DiscussionListItem {
-  background: #212121 !important;
-}
-
-.DiscussionListItem:hover,
-.DiscussionListItem:focus {
-  background: #313131 !important;
-}
-
-.DiscussionListItem .DiscussionListItem-content * {
-  color: #eee !important;
-}
-
-.DiscussionListItem .DiscussionListItem-content.read * {
-  color: #999 !important;
-}
-
-.DiscussionListItem .DiscussionListItem-content .item-excerpt {
-  color: #ccc !important;
-}
-
-/* #endregion */
-
-/* #region Feed Navbar */
-
-.IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li * {
-  color: #aaa !important;
-}
-
-.TagsPage .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li * {
-  color: #aaa !important;
-  padding-left: 6px;
-  padding-right: 4px;
-}
-
-.IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li.active * {
-  color: #ddd !important;
-}
-
-.IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li:hover *,
-.IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li:focus * {
-  background: #444444 !important;
-}
-
-.IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li:focus * {
-  background: #444444 !important;
-}
-
-/* #endregion */
-
-/* #region User Page */
-
-.UserPage .PostsUserPage .PostsUserPage-list > li {
-  background-color: #212121;
-}
-
-.sideNav .Dropdown--select .Dropdown-menu > li > a {
-  color: #bbb;
-}
-
-.sideNav .Dropdown--select .Dropdown-menu > li.active > a,
-.sideNav .Dropdown--select .Dropdown-menu > li:hover > a,
-.sideNav .Dropdown--select .Dropdown-menu > li:focus > a {
-  color: #fff;
-}
-
-/* #endregion */
-
-/* #region Mobile-specific CSS */
-
-@media (max-width: 767px) {
-  .App-content {
-    background: #151515;
-  }
-
-  .DiscussionListItem .DiscussionListItem-content.unread {
-    background-color: #313131 !important;
-  }
-
-  .DiscussionListItem .DiscussionListItem-content.read {
-    background-color: #212121 !important;
-  }
-
-  .Dropdown .Dropdown-menu > li > a,
-  .Dropdown .Dropdown-menu > li > button {
-    background: #313131 !important;
-    color: #eee !important;
-  }
-
-  .IndexPage-nav.sideNav .Dropdown-menu.dropdown-menu li * {
-    color: #eee !important;
-  }
-
-  .Post-header span.Avatar.PostUser-avatar:after {
-    top: -6px;
-    left: 3px;
-    width: 32px;
-    height: 32px;
-  }
-}
-
-/* #endregion */
