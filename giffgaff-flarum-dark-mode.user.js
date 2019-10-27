@@ -18,4 +18,6 @@ $(() => {
 
     console.log("Applied dark theme!");
   });
+  
+  $("body").addClass("dark");
 });
