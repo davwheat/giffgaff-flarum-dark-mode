@@ -28,7 +28,6 @@ body.dark {
   /* Inline monospace */
   /* Code blocks */
   /* #region Post Header */
-  /* Overrides default no-group avatar border to dark instead of light */
   /* Darkens letter-based avatars */
   /* #endregion */
   /* #region Post Footer */
@@ -307,10 +306,7 @@ body.dark .Post-header,
 body.dark .Post-header a {
   color: #777;
 }
-body.dark .Avatar.PostUser-avatar {
-  position: relative;
-}
-body.dark .Post-header span.Avatar.PostUser-avatar:after {
+body.dark .Avatar:after {
   content: "";
   display: block;
   position: absolute;
@@ -321,19 +317,6 @@ body.dark .Post-header span.Avatar.PostUser-avatar:after {
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   border: 3px solid rgba(85, 85, 85, 0.25);
-}
-body.dark .MentionsDropdown .PostPreview .Avatar:after,
-body.dark .PostMention-preview .PostPreview .Avatar:after,
-body.dark .Post-mentionedBy-preview .PostPreview .Avatar:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 24px;
-  height: 24px;
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
 }
 body.dark .Post-header .UserCard .username {
   color: #eeeeee !important;
